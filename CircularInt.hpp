@@ -51,6 +51,26 @@ public:
 	CircularInt operator% (int i) const; 
 	friend CircularInt operator% (int i, const CircularInt& a);
 	
+	//----Bitwise operators----//
+	
+	//AND
+	CircularInt operator& (const CircularInt& other) const;				
+	CircularInt operator& (int i) const;						
+	friend CircularInt operator& (int i, const CircularInt& a);	
+
+	//XOR
+	CircularInt operator^ (const CircularInt& other) const;			
+	CircularInt operator^ (int i) const;							
+	friend CircularInt operator^ (int i, const CircularInt& a);	
+
+	//OR
+	CircularInt operator| (const CircularInt& other) const;			
+	CircularInt operator| (int i) const;							
+	friend CircularInt operator| (int i, const CircularInt& a);	
+
+	//NOT
+	CircularInt operator~ (const CircularInt& a) const;					
+	
 	//----Relational operators----//
 	
 	bool operator== (const CircularInt& other);		//Equal to
@@ -113,25 +133,3 @@ private:
 	
 	void fixValue();
 };
- 
-/*
-//----Bitwise operators----//
-	
-//AND
-CircularInt operator& (const CircularInt& a, const CircularInt& b);		//circ & circ
-CircularInt operator& (const CircularInt& a, const int& i );			//circ & int
-CircularInt operator& (const int& i, const CircularInt& a );			//int & circ
-
-//XOR
-CircularInt operator^ (const CircularInt& a, const CircularInt& b);		//circ ^ circ
-CircularInt operator^ (const CircularInt& a, const int& i );			//circ ^ int
-CircularInt operator^ (const int& i, const CircularInt& a );			//int ^ circ
-
-//OR
-CircularInt operator| (const CircularInt& a, const CircularInt& b);		//circ | circ
-CircularInt operator| (const CircularInt& a, const int& i );			//circ | int
-CircularInt operator| (const int& i, const CircularInt& a );			//int | circ
-
-//NOT
-CircularInt operator~ (const CircularInt& a);		//~circ
-*/
