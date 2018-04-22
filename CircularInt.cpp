@@ -66,7 +66,7 @@ CircularInt CircularInt::operator| (int i) const{}
 CircularInt CircularInt::operator| (int i, const CircularInt& a){}
 
 //NOT
-CircularInt CircularInt::operator~ (const CircularInt& a) const{}
+CircularInt CircularInt::operator~ () const{}
 	
 //----Relational operators----//
 	
