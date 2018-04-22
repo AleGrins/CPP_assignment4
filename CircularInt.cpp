@@ -2,7 +2,7 @@
 #include "CircularInt.hpp"
 
 using namespace std;
-
+/*
 //Constructor
 CircularInt::CircularInt(int lower, int upper);
 
@@ -26,27 +26,27 @@ CircularInt CircularInt::operator- () const;		//Unary minus
 //Addition
 CircularInt CircularInt::operator+ (const CircularInt& other) const; 	
 CircularInt CircularInt::operator+ (int i) const; 				
-friend CircularInt CircularInt::operator+ (int i, const CircularInt& a);
+CircularInt CircularInt::operator+ (int i, const CircularInt& a);
 	
 //Subtraction
 CircularInt CircularInt::operator- (const CircularInt& other) const; 	
 CircularInt CircularInt::operator- (int i) const; 
-friend CircularInt CircularInt::operator- (int i, const CircularInt& a);
+CircularInt CircularInt::operator- (int i, const CircularInt& a);
 	
 //Multiplication
 CircularInt CircularInt::operator* (const CircularInt& other) const; 	
 CircularInt CircularInt::operator* (int i) const; 
-friend CircularInt CircularInt::operator* (int i, const CircularInt& a);
+CircularInt CircularInt::operator* (int i, const CircularInt& a);
 	
 //Division
 CircularInt CircularInt::operator/ (const CircularInt& other) const; 	
 CircularInt CircularInt::operator/ (int i) const; 
-friend CircularInt CircularInt::operator/ (int i, const CircularInt& a);
+CircularInt CircularInt::operator/ (int i, const CircularInt& a);
 	
 //Modulo
 CircularInt CircularInt::operator% (const CircularInt& other) const; 	
 CircularInt CircularInt::operator% (int i) const; 
-friend CircularInt CircularInt::operator% (int i, const CircularInt& a);
+CircularInt CircularInt::operator% (int i, const CircularInt& a);
 	
 //----Relational operators----//
 	
