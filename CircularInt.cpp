@@ -20,6 +20,33 @@ CircularInt& CircularInt::operator-- ();			//Prefix decrement
 CircularInt CircularInt::operator-- (int);		    //Postfix decrement
 CircularInt CircularInt::operator+ () const;		//Unary plus
 CircularInt CircularInt::operator- () const;		//Unary minus
+
+//----Binary operators----//
+	
+//Addition
+CircularInt CircularInt::operator+ (const CircularInt& other) const; 	
+CircularInt CircularInt::operator+ (int i) const; 				
+friend CircularInt CircularInt::operator+ (int i, const CircularInt& a);
+	
+//Subtraction
+CircularInt CircularInt::operator- (const CircularInt& other) const; 	
+CircularInt CircularInt::operator- (int i) const; 
+friend CircularInt CircularInt::operator- (int i, const CircularInt& a);
+	
+//Multiplication
+CircularInt CircularInt::operator* (const CircularInt& other) const; 	
+CircularInt CircularInt::operator* (int i) const; 
+friend CircularInt CircularInt::operator* (int i, const CircularInt& a);
+	
+//Division
+CircularInt CircularInt::operator/ (const CircularInt& other) const; 	
+CircularInt CircularInt::operator/ (int i) const; 
+friend CircularInt CircularInt::operator/ (int i, const CircularInt& a);
+	
+//Modulo
+CircularInt CircularInt::operator% (const CircularInt& other) const; 	
+CircularInt CircularInt::operator% (int i) const; 
+friend CircularInt CircularInt::operator% (int i, const CircularInt& a);
 	
 //----Relational operators----//
 	
