@@ -36,6 +36,10 @@ public:
     //----Assignment operators----//
     
     void operator=(const CircularInt& other);
+    //Left shift
+    CircularInt& operator<<=(const CircularInt& other); 
+    //Right shift
+    CircularInt& operator>>=(const CircularInt& other);
     
     //Addition assignment
 	CircularInt& operator+= (const CircularInt& other);		//circ + circ
@@ -68,8 +72,8 @@ public:
     //OR assignment
 	CircularInt& operator|= (const CircularInt& other);		//circ | circ
     CircularInt& operator|= (int i);						//circ | int
-	
-	friend ostream& operator<< (ostream &output, const CircularInt& C) 
+    
+    friend ostream& operator<< (ostream &output, const CircularInt& C) 
     { 
          output << C.value;
          return output;            
