@@ -33,6 +33,10 @@ bool CircularInt::operator>= (const CircularInt& other);		//Greater or equal
 //----Assignment operators----//
     
 void CircularInt::operator=(const CircularInt& other);
+//Left shift
+CircularInt& CircularInt::operator<<=(const CircularInt& other); 
+//Right shift
+CircularInt& CircularInt::operator>>=(const CircularInt& other);
     
 //Addition assignment
 CircularInt& CircularInt::operator+= (const CircularInt& other);		//circ + circ
