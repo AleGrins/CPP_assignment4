@@ -20,14 +20,6 @@ CircularInt& CircularInt::operator-- ();			//Prefix decrement
 CircularInt CircularInt::operator-- (int);		    //Postfix decrement
 CircularInt CircularInt::operator+ () const;		//Unary plus
 CircularInt CircularInt::operator- () const;		//Unary minus
-
-//----Binary operators----//
-	
-CircularInt CircularInt::operator+ (const CircularInt& other) const; 	//Addition
-CircularInt CircularInt::operator- (const CircularInt& other) const; 	//Subtraction
-CircularInt CircularInt::operator* (const CircularInt& other) const; 	//Multiplication
-CircularInt CircularInt::operator/ (const CircularInt& other) const; 	//Division
-CircularInt CircularInt::operator% (const CircularInt& other) const; 	//Modulo
 	
 //----Relational operators----//
 	
