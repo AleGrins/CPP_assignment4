@@ -134,12 +134,12 @@ private:
 	void fixValue();
 };
 
-CircularInt operator+ (int i, const CircularInt& a) {return *this;}
-CircularInt operator- (int i, const CircularInt& a) {return *this;}
-CircularInt operator* (int i, const CircularInt& a) {return *this;}
-CircularInt operator/ (int i, const CircularInt& a) {return *this;}
-CircularInt operator% (int i, const CircularInt& a) {return *this;}
+CircularInt operator+ (int i, const CircularInt& a) {return CircularInt c(1,12);}
+CircularInt operator- (int i, const CircularInt& a) {return CircularInt c(1,12);}
+CircularInt operator* (int i, const CircularInt& a) {return CircularInt c(1,12);}
+CircularInt operator/ (int i, const CircularInt& a) {return CircularInt c(1,12);}
+CircularInt operator% (int i, const CircularInt& a) {return CircularInt c(1,12);}
 
-CircularInt operator& (int i, const CircularInt& a) {return *this;}
-CircularInt operator^ (int i, const CircularInt& a) {return *this;}
-CircularInt operator| (int i, const CircularInt& a) {return *this;}
+CircularInt operator& (int i, const CircularInt& a) {return CircularInt c(1,12);}
+CircularInt operator^ (int i, const CircularInt& a) {return CircularInt c(1,12);}
+CircularInt operator| (int i, const CircularInt& a) {return CircularInt c(1,12);}
