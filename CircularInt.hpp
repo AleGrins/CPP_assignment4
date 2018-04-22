@@ -23,15 +23,18 @@ public:
 	CircularInt operator-- (int);		//Postfix decrement
 	CircularInt operator+ () const;		//Unary plus
 	CircularInt operator- () const;		//Unary minus
-	
+	/*
 	//----Binary operators----//
 	
 	CircularInt operator+ (const CircularInt& other) const; 	//Addition
+	CircularInt operator+ (const int& i) const; 	//Addition
+	int operator+ (const CircularInt& other) const; 	//Addition
+	
 	CircularInt operator- (const CircularInt& other) const; 	//Subtraction
 	CircularInt operator* (const CircularInt& other) const; 	//Multiplication
 	CircularInt operator/ (const CircularInt& other) const; 	//Division
 	CircularInt operator% (const CircularInt& other) const; 	//Modulo
-	
+	*/
 	//----Relational operators----//
 	
 	bool operator== (const CircularInt& other);		//Equal to
@@ -95,3 +98,49 @@ private:
 	void fixValue();
 };
  
+//----Binary operators----//
+
+//Addition
+CircularInt operator+ (const CircularInt& a, const CircularInt& b);		//circ + circ
+CircularInt operator+ (const CircularInt& a, const int& i );			//circ + int
+CircularInt operator+ (const int& i, const CircularInt& a );			//int + circ
+
+//Subtraction
+CircularInt operator- (const CircularInt& a, const CircularInt& b);		//circ - circ
+CircularInt operator- (const CircularInt& a, const int& i );			//circ - int
+CircularInt operator- (const int& i, const CircularInt& a );			//int - circ
+
+//Multiplication
+CircularInt operator* (const CircularInt& a, const CircularInt& b);		//circ * circ
+CircularInt operator* (const CircularInt& a, const int& i );			//circ * int
+CircularInt operator* (const int& i, const CircularInt& a );			//int * circ
+
+//Division
+CircularInt operator/ (const CircularInt& a, const CircularInt& b);		//circ / circ
+CircularInt operator/ (const CircularInt& a, const int& i );			//circ / int
+CircularInt operator/ (const int& i, const CircularInt& a );			//int / circ
+
+//Modulo
+CircularInt operator% (const CircularInt& a, const CircularInt& b);		//circ % circ
+CircularInt operator% (const CircularInt& a, const int& i );			//circ % int
+CircularInt operator% (const int& i, const CircularInt& a );			//int % circ
+
+//----Bitwise operators----//
+	
+//AND
+CircularInt operator& (const CircularInt& a, const CircularInt& b);		//circ & circ
+CircularInt operator& (const CircularInt& a, const int& i );			//circ & int
+CircularInt operator& (const int& i, const CircularInt& a );			//int & circ
+
+//XOR
+CircularInt operator^ (const CircularInt& a, const CircularInt& b);		//circ ^ circ
+CircularInt operator^ (const CircularInt& a, const int& i );			//circ ^ int
+CircularInt operator^ (const int& i, const CircularInt& a );			//int ^ circ
+
+//OR
+CircularInt operator| (const CircularInt& a, const CircularInt& b);		//circ | circ
+CircularInt operator| (const CircularInt& a, const int& i );			//circ | int
+CircularInt operator| (const int& i, const CircularInt& a );			//int | circ
+
+//NOT
+CircularInt operator~ (const CircularInt& a);		//~circ
