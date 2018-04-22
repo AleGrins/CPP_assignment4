@@ -8,18 +8,18 @@ CircularInt::CircularInt(int lower, int upper){}
 
 //----Getters----//
 	
-int CircularInt::getLower(){}						//Returns lower limit
-int CircularInt::getUpper(){}						//Returns upper limit
-int CircularInt::getValue(){}						//Returns value
+int CircularInt::getLower(){return 1;}						//Returns lower limit
+int CircularInt::getUpper(){return 1;}						//Returns upper limit
+int CircularInt::getValue(){return 1;}						//Returns value
 	
 //----Unary operators----//
 	
-CircularInt& CircularInt::operator++ (){}			//Prefix increment
-CircularInt CircularInt::operator++ (int){}		    //Postfix increment
-CircularInt& CircularInt::operator-- (){}			//Prefix decrement
-CircularInt CircularInt::operator-- (int){}		    //Postfix decrement
-CircularInt CircularInt::operator+ () const{}		//Unary plus
-CircularInt CircularInt::operator- () const{}		//Unary minus
+CircularInt& CircularInt::operator++ (){return *this;}			//Prefix increment
+CircularInt CircularInt::operator++ (int){return *this;}		    //Postfix increment
+CircularInt& CircularInt::operator-- (){return *this;}			//Prefix decrement
+CircularInt CircularInt::operator-- (int){return *this;}		    //Postfix decrement
+CircularInt CircularInt::operator+ () const{return *this;}		//Unary plus
+CircularInt CircularInt::operator- () const{return *this;}		//Unary minus
 
 //----Binary operators----//
 	
