@@ -69,6 +69,12 @@ public:
 	CircularInt& operator|= (const CircularInt& other);		//circ | circ
     CircularInt& operator|= (int i);						//circ | int
 	
+	friend ostream& operator<< (ostream &output, const CircularInt& C) 
+    { 
+         output << C.value;
+         return output;            
+    }
+	
 private:
 	int lowerLimit;
 	int upperLimit;
