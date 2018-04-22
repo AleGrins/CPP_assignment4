@@ -29,44 +29,44 @@ public:
 	//Addition
 	CircularInt operator+ (const CircularInt& other) const; 	
 	CircularInt operator+ (int i) const; 				
-	friend CircularInt operator+ (int i, const CircularInt& a);
+	friend CircularInt operator+ (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 	
 	//Subtraction
 	CircularInt operator- (const CircularInt& other) const; 	
 	CircularInt operator- (int i) const; 
-	friend CircularInt operator- (int i, const CircularInt& a);
+	friend CircularInt operator- (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 	
 	//Multiplication
 	CircularInt operator* (const CircularInt& other) const; 	
 	CircularInt operator* (int i) const; 
-	friend CircularInt operator* (int i, const CircularInt& a);
+	friend CircularInt operator* (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 	
 	//Division
 	CircularInt operator/ (const CircularInt& other) const; 	
 	CircularInt operator/ (int i) const; 
-	friend CircularInt operator/ (int i, const CircularInt& a);
+	friend CircularInt operator/ (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 	
 	//Modulo
 	CircularInt operator% (const CircularInt& other) const; 	
 	CircularInt operator% (int i) const; 
-	friend CircularInt operator% (int i, const CircularInt& a);
+	friend CircularInt operator% (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 	
 	//----Bitwise operators----//
 	
 	//AND
 	CircularInt operator& (const CircularInt& other) const;				
 	CircularInt operator& (int i) const;						
-	friend CircularInt operator& (int i, const CircularInt& a);
+	friend CircularInt operator& (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 
 	//XOR
 	CircularInt operator^ (const CircularInt& other) const;			
 	CircularInt operator^ (int i) const;							
-	friend CircularInt operator^ (int i, const CircularInt& a);
+	friend CircularInt operator^ (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 
 	//OR
 	CircularInt operator| (const CircularInt& other) const;			
 	CircularInt operator| (int i) const;							
-	friend CircularInt operator| (int i, const CircularInt& a);
+	friend CircularInt operator| (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
 
 	//NOT
 	CircularInt operator~ () const;					
@@ -133,13 +133,3 @@ private:
 	
 	void fixValue();
 };
-
-CircularInt operator+ (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-CircularInt operator- (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-CircularInt operator* (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-CircularInt operator/ (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-CircularInt operator% (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-
-CircularInt operator& (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-CircularInt operator^ (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
-CircularInt operator| (int i, const CircularInt& a) {CircularInt c(1,12); return c;}
