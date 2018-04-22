@@ -111,6 +111,3 @@ CircularInt operator| (const int& i, const CircularInt& a );			//int | circ
 
 //NOT
 CircularInt operator~ (const CircularInt& a);		//~circ
-
-//----Output operator----//
-std::ostream& operator<< (std::ostream& output, const CircularInt& a);
