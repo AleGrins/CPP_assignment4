@@ -116,3 +116,8 @@ CircularInt operator| (const int& i, const CircularInt& a );			//int | circ
 
 //NOT
 CircularInt operator~ (const CircularInt& a);		//~circ
+
+//Left shift
+CircularInt operator<< (const CircularInt& a, const CircularInt& b); 
+//Right shift
+CircularInt operator<< (const CircularInt& a, const CircularInt& b); 
