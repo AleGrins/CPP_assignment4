@@ -34,7 +34,7 @@ public:
 	//Subtraction
 	CircularInt operator- (const CircularInt& other) const; 	
 	CircularInt operator- (int i) const; 
-	friend CircularInt operator- (int i, const CircularInt& a);
+	friend CircularInt operator- (int i, const CircularInt a);
 	
 	//Multiplication
 	CircularInt operator* (const CircularInt& other) const; 	
