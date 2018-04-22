@@ -69,7 +69,7 @@ public:
 	friend CircularInt operator| (int i, const CircularInt& a);	
 
 	//NOT
-	CircularInt operator~ (const CircularInt& a) const;					
+	CircularInt operator~ () const;					
 	
 	//----Relational operators----//
 	
