@@ -24,6 +24,14 @@ public:
 	CircularInt operator+ () const;		//Unary plus
 	CircularInt operator- () const;		//Unary minus
 	
+	//----Binary operators----//
+	
+	CircularInt operator+ (const CircularInt& other) const; 	//Addition
+	CircularInt operator- (const CircularInt& other) const; 	//Subtraction
+	CircularInt operator* (const CircularInt& other) const; 	//Multiplication
+	CircularInt operator/ (const CircularInt& other) const; 	//Division
+	CircularInt operator% (const CircularInt& other) const; 	//Modulo
+	
 	//----Relational operators----//
 	
 	bool operator== (const CircularInt& other);		//Equal to
