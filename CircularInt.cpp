@@ -4,7 +4,7 @@
 using namespace std;
 
 //Constructor
-CircularInt::CircularInt(int lower, int upper);
+CircularInt::CircularInt(int lower, int upper){}
 
 //----Getters----//
 	
@@ -26,44 +26,44 @@ CircularInt CircularInt::operator- () const{}		//Unary minus
 //Addition
 CircularInt CircularInt::operator+ (const CircularInt& other) const{}	
 CircularInt CircularInt::operator+ (int i) const{}				
-CircularInt CircularInt::operator+ (int i, const CircularInt& a){}
+//CircularInt CircularInt::operator+ (int i, const CircularInt& a){}
 	
 //Subtraction
 CircularInt CircularInt::operator- (const CircularInt& other) const{}	
 CircularInt CircularInt::operator- (int i) const{}
-CircularInt CircularInt::operator- (int i, const CircularInt& a){}
+//CircularInt CircularInt::operator- (int i, const CircularInt& a){}
 	
 //Multiplication
 CircularInt CircularInt::operator* (const CircularInt& other) const{}
 CircularInt CircularInt::operator* (int i) const{}
-CircularInt CircularInt::operator* (int i, const CircularInt& a){}
+//CircularInt CircularInt::operator* (int i, const CircularInt& a){}
 	
 //Division
 CircularInt CircularInt::operator/ (const CircularInt& other) const{}	
 CircularInt CircularInt::operator/ (int i) const{}
-CircularInt CircularInt::operator/ (int i, const CircularInt& a){}
+//CircularInt CircularInt::operator/ (int i, const CircularInt& a){}
 	
 //Modulo
 CircularInt CircularInt::operator% (const CircularInt& other) const{}	
 CircularInt CircularInt::operator% (int i) const{}
-CircularInt CircularInt::operator% (int i, const CircularInt& a){}
+//CircularInt CircularInt::operator% (int i, const CircularInt& a){}
 
 //----Bitwise operators----//
 	
 //AND
 CircularInt CircularInt::operator& (const CircularInt& other) const{}				
 CircularInt CircularInt::operator& (int i) const{}						
-CircularInt CircularInt::operator& (int i, const CircularInt& a){}	
+//CircularInt CircularInt::operator& (int i, const CircularInt& a){}	
 
 //XOR
 CircularInt CircularInt::operator^ (const CircularInt& other) const{}			
 CircularInt CircularInt::operator^ (int i) const{}							
-CircularInt CircularInt::operator^ (int i, const CircularInt& a){}	
+//CircularInt CircularInt::operator^ (int i, const CircularInt& a){}	
 
 //OR
 CircularInt CircularInt::operator| (const CircularInt& other) const{}		
 CircularInt CircularInt::operator| (int i) const{}						
-CircularInt CircularInt::operator| (int i, const CircularInt& a){}
+//CircularInt CircularInt::operator| (int i, const CircularInt& a){}
 
 //NOT
 CircularInt CircularInt::operator~ () const{}
