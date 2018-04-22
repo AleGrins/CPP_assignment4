@@ -109,5 +109,3 @@ CircularInt& CircularInt::operator^= (int i) {return *this;}						    //circ ^ i
 CircularInt& CircularInt::operator|= (const CircularInt& other) {return *this;}		//circ | circ
 CircularInt& CircularInt::operator|= (int i) {return *this;}						    //circ | int
 
-CircularInt CircularInt::operator- (int i, CircularInt& a) {return *this;}
-
