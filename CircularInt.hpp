@@ -29,44 +29,44 @@ public:
 	//Addition
 	CircularInt operator+ (const CircularInt& other) const; 	
 	CircularInt operator+ (int i) const; 				
-	friend CircularInt operator+ (int i, const CircularInt& a);
+	friend CircularInt operator+ (int i, const CircularInt& a) {return *this;}
 	
 	//Subtraction
 	CircularInt operator- (const CircularInt& other) const; 	
 	CircularInt operator- (int i) const; 
-	friend CircularInt operator- (int i, const CircularInt a);
+	friend CircularInt operator- (int i, const CircularInt& a) {return *this;}
 	
 	//Multiplication
 	CircularInt operator* (const CircularInt& other) const; 	
 	CircularInt operator* (int i) const; 
-	friend CircularInt operator* (int i, const CircularInt& a);
+	friend CircularInt operator* (int i, const CircularInt& a) {return *this;}
 	
 	//Division
 	CircularInt operator/ (const CircularInt& other) const; 	
 	CircularInt operator/ (int i) const; 
-	friend CircularInt operator/ (int i, const CircularInt& a);
+	friend CircularInt operator/ (int i, const CircularInt& a) {return *this;}
 	
 	//Modulo
 	CircularInt operator% (const CircularInt& other) const; 	
 	CircularInt operator% (int i) const; 
-	friend CircularInt operator% (int i, const CircularInt& a);
+	friend CircularInt operator% (int i, const CircularInt& a) {return *this;}
 	
 	//----Bitwise operators----//
 	
 	//AND
 	CircularInt operator& (const CircularInt& other) const;				
 	CircularInt operator& (int i) const;						
-	friend CircularInt operator& (int i, const CircularInt& a);	
+	friend CircularInt operator& (int i, const CircularInt& a) {return *this;}
 
 	//XOR
 	CircularInt operator^ (const CircularInt& other) const;			
 	CircularInt operator^ (int i) const;							
-	friend CircularInt operator^ (int i, const CircularInt& a);	
+	friend CircularInt operator^ (int i, const CircularInt& a) {return *this;}
 
 	//OR
 	CircularInt operator| (const CircularInt& other) const;			
 	CircularInt operator| (int i) const;							
-	friend CircularInt operator| (int i, const CircularInt& a);	
+	friend CircularInt operator| (int i, const CircularInt& a) {return *this;}
 
 	//NOT
 	CircularInt operator~ () const;					
