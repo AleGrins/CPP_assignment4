@@ -21,7 +21,6 @@ public:
 	CircularInt operator++ (int);		//Postfix increment
 	CircularInt& operator-- ();			//Prefix decrement
 	CircularInt operator-- (int);		//Postfix decrement
-	//CircularInt operator+ () const;		//Unary plus
 	CircularInt operator- () const;		//Unary minus
 	
 	//----Binary operators----//
