@@ -18,7 +18,6 @@ CircularInt& CircularInt::operator++ () {return *this;}			//Prefix increment
 CircularInt CircularInt::operator++ (int) {return *this;}		    //Postfix increment
 CircularInt& CircularInt::operator-- () {return *this;}			//Prefix decrement
 CircularInt CircularInt::operator-- (int) {return *this;}		    //Postfix decrement
-//CircularInt CircularInt::operator+ () const {return *this;}		//Unary plus
 CircularInt CircularInt::operator- () const {return *this;}		//Unary minus
 
 //----Binary operators----//
