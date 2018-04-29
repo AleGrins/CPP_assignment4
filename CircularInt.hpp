@@ -30,26 +30,33 @@ public:
 	//Equal to
 	bool operator== (const CircularInt& other);		
 	bool operator== (int i);
+	friend bool operator== (int i, const CircularInt& a);
 	//Not equal to
 	bool operator!= (const CircularInt& other);
 	bool operator!= (int i);
+	friend bool operator!= (int i, const CircularInt& a);
 	//Lesser than
 	bool operator< (const CircularInt& other);
 	bool operator< (int i);
+	friend bool operator< (int i, const CircularInt& a);
 	//Greater than
 	bool operator> (const CircularInt& other);	
 	bool operator> (int i);
+	friend bool operator> (int i, const CircularInt& a);
 	//Lesser or equal
 	bool operator<= (const CircularInt& other);
 	bool operator<= (int i);
+	friend bool operator<= (int i, const CircularInt& a);
 	//Greater or equal
 	bool operator>= (const CircularInt& other);	
 	bool operator>= (int i);
+	friend bool operator>= (int i, const CircularInt& a);
 
     //----Assignment operators----//
     
     //Copy assignment
     CircularInt& operator=(const CircularInt& other);
+    CircularInt& operator=(int i);
     
     //Left shift
     CircularInt& operator<<=(const CircularInt& other); 
