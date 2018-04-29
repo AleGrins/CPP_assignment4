@@ -64,22 +64,30 @@ CircularInt CircularInt::operator- () const     //Unary minus:
 
 //----Relational operators----//
 	
-bool CircularInt::operator== (const CircularInt& other)		//Equal to
+//Equal to
+bool CircularInt::operator== (const CircularInt& other)		
     { return (value == other.value); }
-		
-bool CircularInt::operator!= (const CircularInt& other)		//Not equal to
+bool CircularInt::operator== (int i)		
+    { return (value == i); }    
+
+//Not equal to
+bool CircularInt::operator!= (const CircularInt& other)		
 	{ return !(*this == other); }
-		
-bool CircularInt::operator< (const CircularInt& other)		//Lesser than
+
+//Lesser than		
+bool CircularInt::operator< (const CircularInt& other)		
 	{ return (value < other.value); }
-			
-bool CircularInt::operator> (const CircularInt& other)		//Greater than
+
+//Greater than			
+bool CircularInt::operator> (const CircularInt& other)		
 	{ return (value > other.value); }
-			
-bool CircularInt::operator<= (const CircularInt& other)		//Lesser or equal
+
+//Lesser or equal			
+bool CircularInt::operator<= (const CircularInt& other)		
 	{ return ((*this == other) || (*this < other)); }
-			
-bool CircularInt::operator>= (const CircularInt& other)		//Greater or equal
+
+//Greater or equal			
+bool CircularInt::operator>= (const CircularInt& other)	
 	{ return ((*this == other) || (*this > other)); }
 
 //----Assignment operators----//
