@@ -85,7 +85,7 @@ bool CircularInt::operator>= (const CircularInt& other)		//Greater or equal
 //----Assignment operators----//
     
 //Copy assignment
-CircularInt& operator=(const CircularInt& other)
+CircularInt& CircularInt::operator=(const CircularInt& other)
 {
     if(this != &other){ //Self-assignment check
 	   	lowerLimit = other.lowerLimit;
