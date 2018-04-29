@@ -127,7 +127,7 @@ CircularInt& CircularInt::operator=(const CircularInt& other)
 }
 CircularInt& CircularInt::operator=(int i)
 {
-	if(this != i){ //Self-assignment check
+	if(value != i){ //Self-assignment check
 	   	value = i;
     }
     return *this;
