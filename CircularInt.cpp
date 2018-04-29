@@ -73,22 +73,32 @@ bool CircularInt::operator== (int i)
 //Not equal to
 bool CircularInt::operator!= (const CircularInt& other)		
 	{ return !(*this == other); }
+bool CircularInt::operator!= (int i)		
+    { return !(*this == i); }
 
 //Lesser than		
 bool CircularInt::operator< (const CircularInt& other)		
 	{ return (value < other.value); }
+bool CircularInt::operator< (int i)		
+    { return (value < i); }
 
 //Greater than			
 bool CircularInt::operator> (const CircularInt& other)		
 	{ return (value > other.value); }
+bool CircularInt::operator> (int i)		
+	{ return (value > i); }
 
 //Lesser or equal			
 bool CircularInt::operator<= (const CircularInt& other)		
 	{ return ((*this == other) || (*this < other)); }
+bool CircularInt::operator!= (int i)		
+    { return ((*this == i) || (*this < i)); }
 
 //Greater or equal			
 bool CircularInt::operator>= (const CircularInt& other)	
 	{ return ((*this == other) || (*this > other)); }
+bool CircularInt::operator!= (int i)		
+    { return ((*this == i) || (*this > i)); }
 
 //----Assignment operators----//
     
