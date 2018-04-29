@@ -29,17 +29,22 @@ public:
 	
 	//Equal to
 	bool operator== (const CircularInt& other);		
-	bool operator== (int i)
+	bool operator== (int i);
 	//Not equal to
 	bool operator!= (const CircularInt& other);
+	bool operator!= (int i);
 	//Lesser than
 	bool operator< (const CircularInt& other);
+	bool operator< (int i);
 	//Greater than
 	bool operator> (const CircularInt& other);	
+	bool operator> (int i);
 	//Lesser or equal
-	bool operator<= (const CircularInt& other);	
+	bool operator<= (const CircularInt& other);
+	bool operator<= (int i);
 	//Greater or equal
 	bool operator>= (const CircularInt& other);	
+	bool operator>= (int i);
 
     //----Assignment operators----//
     
