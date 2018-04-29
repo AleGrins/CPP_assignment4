@@ -91,13 +91,13 @@ bool CircularInt::operator> (int i)
 //Lesser or equal			
 bool CircularInt::operator<= (const CircularInt& other)		
 	{ return ((*this == other) || (*this < other)); }
-bool CircularInt::operator!= (int i)		
+bool CircularInt::operator<= (int i)		
     { return ((*this == i) || (*this < i)); }
 
 //Greater or equal			
 bool CircularInt::operator>= (const CircularInt& other)	
 	{ return ((*this == other) || (*this > other)); }
-bool CircularInt::operator!= (int i)		
+bool CircularInt::operator>= (int i)		
     { return ((*this == i) || (*this > i)); }
 
 //----Assignment operators----//
